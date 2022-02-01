@@ -8,7 +8,7 @@ public class AccountTest {
     public void accountCannotHaveNegativeOverdraftLimit() {
         Account account = new Account(-20);
         Assert.assertEquals(0d, account.getOverdraftLimit(), epsilon);
-        account.getBalance()
+        account.getBalance();
     }
     @Test
     public void depositNotAcceptNegsative(){
